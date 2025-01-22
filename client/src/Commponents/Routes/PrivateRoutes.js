@@ -14,7 +14,7 @@ export default function PrivateRoutes() {
 
 
             const res = await axios.get(`${process.env.React_App_API}/api/v1/auth/user-auth`)
-            if (res.data.ok) {
+            if (res?.data?.ok) {
                 setok(true)
             } else {
                 setok(false)
